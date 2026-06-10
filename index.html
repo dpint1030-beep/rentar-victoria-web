@@ -1,69 +1,252 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rentar Victoria S.A.S.</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<nav>
-<div class="logo">Rentar Victoria S.A.S.</div>
-<ul>
-<li><a href="#servicios">Servicios</a></li>
-<li><a href="#destinos">Destinos</a></li>
-<li><a href="#flota">Flota</a></li>
-<li><a href="#fundador">Fundador</a></li>
-<li><a href="#contacto">Contacto</a></li>
-</ul>
-</nav>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Rentar Victoria S.A.S. | Transporte Ejecutivo Premium</title>
 
-<header class="hero">
-<h1>Tu transporte de confianza en Santa Marta</h1>
-<p>Conectamos destinos, brindamos confianza.</p>
-<a class="btn" href="https://wa.me/573226728838">Solicitar Cotización</a>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+  --navy:#0b1f3a;
+  --gold:#c8a24a;
+  --light:#f5f7fa;
+  --text:#333;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Montserrat', sans-serif;
+}
+
+body{
+  background:var(--light);
+  color:var(--text);
+  scroll-behavior:smooth;
+}
+
+/* HEADER */
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:rgba(11,31,58,0.9);
+  backdrop-filter:blur(10px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  z-index:1000;
+}
+
+header h1{
+  color:white;
+  font-size:18px;
+}
+
+nav a{
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+nav a:hover{
+  color:var(--gold);
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  padding:20px;
+
+  background:linear-gradient(rgba(11,31,58,0.75), rgba(11,31,58,0.75)),
+  url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80');
+  background-size:cover;
+  background-position:center;
+}
+
+.hero h2{
+  font-size:48px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  max-width:700px;
+  font-size:18px;
+  margin-bottom:25px;
+}
+
+.btn{
+  background:var(--gold);
+  color:white;
+  padding:14px 32px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* SECCIONES */
+section{
+  padding:90px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+h2.section-title{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:32px;
+  color:var(--navy);
+}
+
+/* SERVICIOS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* FLOTA */
+.car{
+  background:white;
+  padding:15px;
+  border-radius:15px;
+  text-align:center;
+}
+
+.car img{
+  width:100%;
+  border-radius:10px;
+}
+
+/* CONTACTO */
+.contact{
+  text-align:center;
+  background:var(--navy);
+  color:white;
+  padding:60px 20px;
+  border-radius:15px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  font-size:14px;
+  color:#666;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Rentar Victoria S.A.S</h1>
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#flota">Flota</a>
+    <a href="#fundador">Fundador</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 </header>
 
+<!-- HERO -->
+<section class="hero">
+  <h2>Transporte Ejecutivo Premium</h2>
+  <p>Movilidad segura, cómoda y confiable para tus viajes en Colombia.</p>
+  <a class="btn" href="#contacto">Reservar ahora</a>
+</section>
+
+<!-- SERVICIOS -->
 <section id="servicios">
-<h2>Servicios</h2>
-<ul>
-<li>Traslados Aeropuerto ↔ Hotel</li>
-<li>City Tour Santa Marta</li>
-<li>Tours Turísticos</li>
-<li>Viajes Regionales</li>
-<li>Transporte Empresarial</li>
-<li>Atención a Hoteles y Agencias</li>
-</ul>
+  <h2 class="section-title">Nuestros Servicios</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Transporte Ejecutivo</h3>
+      <p>Viajes cómodos y seguros para empresas y particulares.</p>
+    </div>
+
+    <div class="card">
+      <h3>Traslados Aeropuerto</h3>
+      <p>Servicio puntual desde y hacia el aeropuerto.</p>
+    </div>
+
+    <div class="card">
+      <h3>Alquiler de Vehículos</h3>
+      <p>Flota moderna disponible para cualquier necesidad.</p>
+    </div>
+  </div>
 </section>
 
-<section id="destinos">
-<h2>Destinos</h2>
-<p>Tayrona, Minca, Palomino, Playa Cristal, Bahía Concha, Cartagena, Barranquilla, Riohacha y más.</p>
-</section>
-
+<!-- FLOTA -->
 <section id="flota">
-<h2>Nuestra Flota</h2>
-<h3>Mercedes Sprinter</h3>
-<p>Hasta 19 pasajeros.</p>
-<h3>Hyundai H1</h3>
-<p>Hasta 10 pasajeros.</p>
-<h3>Duster y Nissan Kicks</h3>
-<p>1 a 4 pasajeros.</p>
+  <h2 class="section-title">Nuestra Flota</h2>
+
+  <div class="grid">
+
+    <div class="car">
+      <img src="flota/Hyundai-guion-almedio-H1-guion-almedio-rentar-almedio-victoria.jpeg">
+      <h3>Hyundai H1</h3>
+    </div>
+
+    <div class="car">
+      <img src="flota/Renault-guion-almedio-Duster-guion-almedio-rentar-almedio-victoria.jpeg">
+      <h3>Renault Duster</h3>
+    </div>
+
+    <div class="car">
+      <img src="flota/Sprinter-guion-almedio-rentar-guion-almedio-victoria.jpeg">
+      <h3>Mercedes Sprinter</h3>
+    </div>
+
+  </div>
 </section>
 
+<!-- FUNDADOR -->
 <section id="fundador">
-<h2>Nuestro Fundador</h2>
-<p>Yuris Pinto - Más de 10 años brindando confianza y seguridad.</p>
+  <h2 class="section-title">Fundador</h2>
+
+  <div class="card" style="text-align:center;">
+    <img src="fundador/foto-guion-almedio-de-guion-almedio-Yuris-guion-almedio-pinto.jpeg" style="width:200px;border-radius:50%;">
+    <h3>Yuris Pinto</h3>
+    <p>Fundador de Rentar Victoria S.A.S</p>
+  </div>
 </section>
 
+<!-- CONTACTO -->
 <section id="contacto">
-<h2>Contacto</h2>
-<p>WhatsApp: +57 322 672 8838</p>
-<p>Instagram: rentar_victoria_santa_marta</p>
-<p>Facebook: Rentar Victoria SAS</p>
-<p>Correo: rentarvictoria@gmail.com</p>
+  <div class="contact">
+    <h2>Contáctanos</h2>
+    <p>Reserva tu servicio de transporte ejecutivo hoy mismo.</p>
+    <br>
+    <p>📞 WhatsApp: +57 XXX XXX XXXX</p>
+  </div>
 </section>
 
-<script src="script.js"></script>
+<footer>
+  © 2026 Rentar Victoria S.A.S - Todos los derechos reservados
+</footer>
+
 </body>
 </html>
