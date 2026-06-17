@@ -146,7 +146,10 @@ h2.section-title{
 
 .car img{
   width:100%;
-  border-radius:10px;
+  height:250px;
+  object-fit:cover;
+  object-position:center;
+  border-radius:15px;
 }
 
 /* CONTACTO */
@@ -176,9 +179,27 @@ footer{
 <body>
 
 <header>
+  header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:#0b1f3a;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 30px;
+  z-index:1000;
+}
+
+header h1{
+  color:white;
+  font-size:28px;
+  margin:0;
+}
 
 <div style="display:flex;align-items:center;gap:15px;">
-  <img src="logo/logo-principa-rentar-victoia.jpeg" style="height:120px;border:3px solid red;background:white;">
+ <img src="logo/logo-principa-rentar-victoia.jpeg" style="height:140px;">
   <h1>Rentar Victoria S.A.S</h1>
 </div>
 
@@ -256,6 +277,55 @@ Reservar por WhatsApp
     </div>
   </div>
 </section>
+  <section id="ventajas">
+
+<h2 class="section-title">¿Por qué elegir Rentar Victoria?</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🛡️ Seguridad</h3>
+<p>Vehículos en óptimas condiciones y conductores profesionales.</p>
+</div>
+
+<div class="card">
+<h3>⏰ Puntualidad</h3>
+<p>Cumplimos con los horarios establecidos para cada servicio.</p>
+</div>
+
+<div class="card">
+<h3>🤝 Confianza</h3>
+<p>Más de 10 años brindando experiencias de transporte seguras.</p>
+</div>
+
+<div class="card">
+<h3>🌴 Cobertura Regional</h3>
+<p>Santa Marta, Cartagena, Barranquilla, Riohacha y más destinos.</p>
+</div>
+
+</div>
+
+</section>
+  <section id="destinos">
+
+<h2 class="section-title">Destinos Turísticos</h2>
+
+<div class="grid">
+
+<div class="card">🏖️ Playa Cristal</div>
+<div class="card">🌊 Bahía Concha</div>
+<div class="card">⛰️ Minca</div>
+<div class="card">🌴 Parque Tayrona</div>
+<div class="card">🏝️ Palomino</div>
+<div class="card">🚤 Taganga</div>
+<div class="card">🏙️ Cartagena</div>
+<div class="card">🌇 Barranquilla</div>
+<div class="card">🌵 Riohacha</div>
+<div class="card">🏛️ Mompox</div>
+
+</div>
+
+</section>
 
 <!-- FLOTA -->
 <section id="flota">
@@ -286,7 +356,35 @@ Reservar por WhatsApp
   </div>
 
 </section>
+<section id="estadisticas">
 
+<h2 class="section-title">Nuestra Experiencia</h2>
+
+<div class="grid">
+
+<div class="card">
+<h1>10+</h1>
+<p>Años de experiencia</p>
+</div>
+
+<div class="card">
+<h1>24/7</h1>
+<p>Atención permanente</p>
+</div>
+
+<div class="card">
+<h1>100%</h1>
+<p>Compromiso y seguridad</p>
+</div>
+
+<div class="card">
+<h1>5000+</h1>
+<p>Servicios realizados</p>
+</div>
+
+</div>
+
+</section>
   
 
 <!-- FUNDADOR -->
