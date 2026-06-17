@@ -28,7 +28,7 @@ header{
   top:0;
   left:0;
   width:100%;
-  background:rgba(11,31,58,0.9);
+  background:linear-gradient(90deg,#07162d,#0b1f3a,#102b52);
   backdrop-filter:blur(10px);
   display:flex;
   justify-content:space-between;
@@ -37,6 +37,22 @@ header{
   z-index:1000;
 }
   header h1{
+  color:white;
+  font-size:22px;
+}
+  .logo-area{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.logo-area img{
+  height:60px;
+  width:auto;
+  border-radius:8px;
+}
+
+.logo-area h1{
   color:white;
   font-size:22px;
 }
@@ -152,7 +168,11 @@ footer{
 <body>
 
 <header>
+
+<div class="logo-area">
+  <img src="logo/logo-principal-rentar-victoria.jpeg" alt="Logo Rentar Victoria">
   <h1>Rentar Victoria S.A.S</h1>
+</div>
   <nav>
     <a href="#servicios">Servicios</a>
     <a href="#flota">Flota</a>
@@ -163,15 +183,53 @@ footer{
 
 <!-- HERO -->
 <section class="hero">
-  <h2>Transporte Ejecutivo Premium</h2>
-  <p>Movilidad segura, cómoda y confiable para tus viajes en Colombia.</p>
-  <a class="btn" href="#contacto">Reservar ahora</a>
+<h2>Transporte Turístico y Empresarial en Santa Marta</h2>
+
+<p>
+Más de 10 años brindando seguridad, puntualidad, comodidad y confianza
+en cada recorrido por Santa Marta y la Región Caribe.
+</p>
+  <a class="btn" href="https://wa.me/573226728838" target="_blank">
+Reservar por WhatsApp
+</a>
 </section>
 
 <!-- SERVICIOS -->
 <section id="servicios">
   <h2 class="section-title">Nuestros Servicios</h2>
+<div class="grid">
 
+<div class="card">
+<h3>✈️ Traslados Aeropuerto</h3>
+<p>Recogidas y traslados seguros desde y hacia el aeropuerto.</p>
+</div>
+
+<div class="card">
+<h3>🌴 Tours Turísticos</h3>
+<p>Recorridos por los principales destinos de Santa Marta y la región Caribe.</p>
+</div>
+
+<div class="card">
+<h3>👔 Transporte Empresarial</h3>
+<p>Servicio ejecutivo para empresas, eventos y reuniones corporativas.</p>
+</div>
+
+<div class="card">
+<h3>🏨 Atención a Hoteles</h3>
+<p>Convenios y transporte para huéspedes y agencias de viaje.</p>
+</div>
+
+<div class="card">
+<h3>🚍 Viajes Regionales</h3>
+<p>Traslados cómodos hacia diferentes ciudades y municipios de la región.</p>
+</div>
+
+<div class="card">
+<h3>🕒 Atención 24 Horas</h3>
+<p>Disponibilidad permanente para nuestros clientes.</p>
+</div>
+
+</div>
   <div class="grid">
     <div class="card">
       <h3>Transporte Ejecutivo</h3>
