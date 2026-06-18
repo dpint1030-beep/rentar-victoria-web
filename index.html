@@ -4,68 +4,69 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Rentar Victoria S.A.S. | Transporte turistico y ejecutivo</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
-
 <style>
-
 :root{
   --navy:#0b1f3a;
   --gold:#c8a24a;
   --light:#f5f7fa;
   --text:#333;
 }
-
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
   font-family:'Montserrat', sans-serif;
 }
-
 header{
   position:fixed;
   top:0;
   left:0;
   width:100%;
-  background:rgba(11,31,58,0.9);
+  background:rgba(11,31,58,0.95);
+  backdrop-filter:blur(10px);
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:15px 40px;
+  padding:12px 40px;
   z-index:1000;
+  box-shadow:0 3px 15px rgba(0,0,0,0.2);
 }
   header h1{
   color:white;
   font-size:22px;
   margin:0;
 }
-}
   .logo-area{
   display:flex;
   align-items:center;
   gap:15px;
 }
-
 .logo-area img{
-  height:60px;
+  height:75px;
   width:auto;
-  border-radius:8px;
 }
-
 .logo-area h1{
   color:white;
-  font-size:22px;
+  font-size:26px;
+  font-weight:700;
+}
+nav{
+  display:flex;
+  gap:10px;
 }
 nav a{
   color:white;
-  margin-left:20px;
   text-decoration:none;
-  font-size:14px;
+  padding:10px 18px;
+  border-radius:25px;
+  transition:0.3s;
+  font-weight:600;
 }
 
 nav a:hover{
-  color:var(--gold);
+  background:var(--gold);
+  color:white;
 }
 
 /* HERO */
@@ -78,24 +79,20 @@ nav a:hover{
   text-align:center;
   color:white;
   padding:20px;
-
-  background:linear-gradient(rgba(11,31,58,0.75), rgba(11,31,58,0.75)),
+ background:linear-gradient(rgba(11,31,58,0.75), rgba(11,31,58,0.75)),
   url('flota/sprinter-rentar-victoria.jpeg');
   background-size:cover;
   background-position:center;
 }
-
 .hero h2{
-  font-size:48px;
-  margin-bottom:15px;
+  font-size:58px;
+  margin-bottom:20px;
 }
-
 .hero p{
-  max-width:700px;
-  font-size:18px;
-  margin-bottom:25px;
+  max-width:800px;
+  font-size:22px;
+  margin-bottom:30px;
 }
-
 .btn{
   background:var(--gold);
   color:white;
@@ -125,12 +122,81 @@ h2.section-title{
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:20px;
 }
+<!-- EMPRESA -->
+<section id="empresa">
 
+<h2 class="section-title">¿Quiénes Somos?</h2>
+
+<div class="card">
+<p style="text-align:center;font-size:18px;line-height:1.8;">
+Rentar Victoria S.A.S. es una empresa especializada en transporte turístico, empresarial y ejecutivo en Santa Marta y la región Caribe. Nuestro compromiso es brindar experiencias de viaje seguras, cómodas y confiables, apoyados en una flota moderna y un equipo humano altamente capacitado.
+</p>
+</div>
+
+<br><br>
+
+<div class="grid">
+
+<div class="card">
+<h3>🎯 Misión</h3>
+<br>
+<p>
+Brindar servicios de transporte turístico y empresarial con altos estándares de calidad, seguridad y puntualidad, generando confianza y satisfacción en cada uno de nuestros clientes.
+</p>
+</div>
+
+<div class="card">
+<h3>🚀 Visión</h3>
+<br>
+<p>
+Ser reconocidos como una de las empresas líderes en transporte turístico y ejecutivo de la región Caribe, destacándonos por la excelencia, innovación y compromiso con nuestros usuarios.
+</p>
+</div>
+
+</div>
+
+</section>
+  <!-- ESTADISTICAS -->
+<section id="estadisticas">
+
+<h2 class="section-title">Nuestra Experiencia</h2>
+
+<div class="grid">
+
+<div class="card" style="text-align:center;">
+<h3>10+</h3>
+<p>Años de experiencia</p>
+</div>
+
+<div class="card" style="text-align:center;">
+<h3>5000+</h3>
+<p>Servicios realizados</p>
+</div>
+
+<div class="card" style="text-align:center;">
+<h3>24/7</h3>
+<p>Atención permanente</p>
+</div>
+
+<div class="card" style="text-align:center;">
+<h3>100%</h3>
+<p>Compromiso y seguridad</p>
+</div>
+
+</div>
+
+</section>
 .card{
   background:white;
-  padding:20px;
-  border-radius:15px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  padding:25px;
+  border-radius:18px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 12px 30px rgba(0,0,0,0.15);
 }
 
 /* FLOTA */
@@ -174,31 +240,11 @@ footer{
 }
 </head>
 <body>
+
 <header>
 
-<div style="display:flex;align-items:center;gap:15px;">
-<img src="logo/logo-principa-rentar-victoia.jpeg" style="height:75px;">
-<h1>Rentar Victoria S.A.S</h1>
-</div>
-
-<nav>
-...
-</nav>
-
-</header>
-
-<nav>
-  <a href="#servicios">Servicios</a>
-  <a href="#flota">Flota</a>
-  <a href="#fundador">Fundador</a>
-  <a href="#contacto">Contacto</a>
-</nav>
-
-</header>
-}
-
-<div style="display:flex;align-items:center;gap:15px;">
- <img src="logo/logo-principa-rentar-victoia.jpeg" style="height:75px;">
+<div class="logo-area">
+  <img src="logo/logo-principa-rentar-victoia.jpeg" style="height:75px;">
   <h1>Rentar Victoria S.A.S</h1>
 </div>
 
@@ -208,6 +254,7 @@ footer{
   <a href="#fundador">Fundador</a>
   <a href="#contacto">Contacto</a>
 </nav>
+
 </header>
 
 <!-- HERO -->
